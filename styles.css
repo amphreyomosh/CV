@@ -40,13 +40,14 @@ h4 {
 .left {
   display: inline-block;
   width: 49%;
-  vertical-align: top;}
-
-  .right {
-    display: inline-block;
-    width: 49%;
-  }
+  vertical-align: top;
 }
+
+.right {
+  display: inline-block;
+  width: 49%;
+}
+
 section.left {
   display: inline-block;
   width: 24%;
@@ -75,4 +76,39 @@ section.right {
 .work-title-right {
   display: inline-block;
   width: 24%;
+}
+.form-question {
+  margin: 20px 0;
+}
+.form-question label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-question input,
+.form question,
+textarea {
+  width: 80vw;
+  border: 1px solid red;
+  border-radius: 1px;
+  padding: 10px 5px;
+}
+
+.required label::after {
+  content: " *";
+  color: red;
+}
+
+#submit {
+  padding: 7px 20px;
+  background-color: #256ac4;
+  color: white;
+  border: 0;
+  box-shadow: none;
+  border-radius: 4px;
+}
+
+#submit:hover {
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
 }
