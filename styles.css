@@ -1,12 +1,41 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-header, main {
-  margin:20px;
+header,
+main {
+  margin: 20px;
 }
-/* FONTS      */
+/* CV      */
+@media screen and (max-width: 799px) {
+ #info{
+  display: block;
+ } 
+}
+
+@media screen and (min-width: 800px){
+  #info{
+    display: grid;
+  grid-template-columns: 1fr 1fr;}
+
+  #info.left{
+    text-align: center;
+    
+  }
+  #info.right{
+    text-align: center;
+    margin-top: 20px;
+  }
+  section.right{
+    margin: 20px;
+  }
+  section h3{
+    font-weight: bold;
+  }
+}
+
+
 body {
   font-family: Geneva, Verdana;
   font-weight: 200;
@@ -44,29 +73,57 @@ h4 {
   font-size: 20px;
   margin: 0px;
 }
+#info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#info .right {
+  align-self: end;
+  text-align: right;
+}
+section {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+.work-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.work-item p {
+  grid-area: 2 / 1 / 3 / 3;
+}
+#info, main{
+  max-width: 1000px;
+}
+#info{
+  margin: 0 auto;
+  padding: 0 20px;
+}
+main{
+  margin: 0 auto;
+  padding:0 20px; 
+}
+
+
 /*PROJECTS*/
-.project-wrapper{
+.project-wrapper {
   margin: 20px;
 }
-#grid-container{
+#grid-container {
   display: grid;
   grid-template-column: 1fr 1fr;
   grid-template-row: auto auto;
-  gap: 20px ; 
-  
+  gap: 20px;
 }
-#title{
-  
+#title {
   grid-column: 1 / 4;
   grid-row: 1;
 }
-#left{
-  
+#left {
   grid-column: 1 / 2;
   grid-row: 2;
 }
-#right{
-  
+#right {
   grid-column: 3 / 4;
   grid-row: 2;
 }
@@ -74,41 +131,47 @@ h4 {
 .item {
   flex: 1 0 100px;
   margin: 10px;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .item1 {
   flex: 1 0 100px;
   margin: 10px;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  
- 
 }
 
-#parrot, #hen, #bat, #eagle, #flamingo, #peacock {
+#parrot,
+#hen,
+#bat,
+#eagle,
+#flamingo,
+#peacock {
   width: 100%;
   height: 60%;
 }
 
-#lion, #girrafe, #buffalo, #rhino, #gazzelle, #cow{
+#lion,
+#girrafe,
+#buffalo,
+#rhino,
+#gazzelle,
+#cow {
   width: 100%;
   height: 60%;
 }
-.flex-container{
+.flex-container {
   display: flex;
   flex-direction: rows;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
-.container{
+.container {
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -118,38 +181,33 @@ h4 {
   padding: 0 30px;
 }
 
-.navbar{
+.navbar {
   background-color: pink;
   color: black;
   height: 60px;
 }
 
-.navbar ul{
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-.navbar li{
+.navbar li {
   margin-left: 20px;
-  
 }
-.navbar a{
+.navbar a {
   color: black;
   text-decoration: none;
   font-family: arial, senserif;
   font-size: 18px;
   font-weight: bold;
-  
-  
-
 }
-.logo{
+.logo {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: large;
 }
-
 
 /* CONTACT*/
 .left {
@@ -227,11 +285,11 @@ textarea {
   color: blue;
   border: 1px solid blue;
 }
-.contact-wrapper{
+.contact-wrapper {
   margin: 20px;
 }
 /*NAVBAR*/
-.container{
+.container {
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -241,31 +299,29 @@ textarea {
   padding: 0 30px;
 }
 
-.navbar{
+.navbar {
   background-color: #3474ed;
   color: white;
   height: 60px;
 }
 
-.navbar ul{
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-.navbar li{
+.navbar li {
   margin-left: 20px;
-  
 }
-.navbar a{
+.navbar a {
   color: white;
   text-decoration: none;
   font-family: arial, senserif;
   font-size: 18px;
   font-weight: bold;
-
 }
-.logo{
+.logo {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: large;
