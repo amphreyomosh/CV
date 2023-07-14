@@ -8,102 +8,71 @@ main {
   margin: 20px;
 }
 /* CV      */
-@media screen and (max-width: 799px) {
- #info{
-  display: block;
- } 
+.paper-background {
+  background-color: white;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+#info,
+main {
+  max-width: 1000px;
+  padding: 0 20px;
+}
+#info {
+  margin: 30px auto;
+}
+main {
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 800px){
-  #info{
-    display: grid;
-  grid-template-columns: 1fr 1fr;}
+#info h1 {
+  margin: 0;
+}
+#info h2 {
+  margin: 0;
+}
 
-  #info.left{
+/* DISPLAY*/
+@media screen and (max-width: 799px) {
+  #info .left {
     text-align: center;
-    
   }
-  #info.right{
+  #info .right {
     text-align: center;
     margin-top: 20px;
   }
-  section.right{
+  section .right {
     margin: 20px;
   }
-  section h3{
+  section h3 {
     font-weight: bold;
   }
 }
+@media screen and (min-width: 800px) {
+  #info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-
-body {
-  font-family: Geneva, Verdana;
-  font-weight: 200;
-  color: #333333;
-  background-color: blanchedalmond;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 300;
+  section {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
 }
 
-h1 {
-  font-size: 40px;
-  color: #047;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+.left h3 {
+  margin-top: 10px;
 }
-h2 {
-  font-size: 22px;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-h3 {
-  font-size: 20px;
-  font-style: italic;
-  margin: 0 0 0 10px;
-}
-h4 {
-  font-size: 20px;
-  margin: 0px;
-}
-#info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-#info .right {
-  align-self: end;
-  text-align: right;
-}
-section {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-}
+
 .work-item {
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
+
 .work-item p {
   grid-area: 2 / 1 / 3 / 3;
 }
-#info, main{
-  max-width: 1000px;
-}
-#info{
-  margin: 0 auto;
-  padding: 0 20px;
-}
-main{
-  margin: 0 auto;
-  padding:0 20px; 
-}
-
 
 /*PROJECTS*/
 .project-wrapper {
@@ -181,34 +150,6 @@ main{
   padding: 0 30px;
 }
 
-.navbar {
-  background-color: pink;
-  color: black;
-  height: 60px;
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.navbar li {
-  margin-left: 20px;
-}
-.navbar a {
-  color: black;
-  text-decoration: none;
-  font-family: arial, senserif;
-  font-size: 18px;
-  font-weight: bold;
-}
-.logo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: large;
-}
-
 /* CONTACT*/
 .left {
   display: inline-block;
@@ -266,7 +207,7 @@ textarea {
   padding: 10px 5px;
 }
 
-.required label::after {
+.required label:: after {
   content: " *";
   color: red;
 }
@@ -286,10 +227,11 @@ textarea {
   border: 1px solid blue;
 }
 .contact-wrapper {
-  margin: 20px;
+  margin: 40px;
 }
+
 /*NAVBAR*/
-.container {
+/*.container {
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -325,4 +267,45 @@ textarea {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: large;
+}
+***************************/
+#image {
+  width: 500px;
+}
+#first {
+  font-family: cursive;
+}
+#my-name {
+  font-family: rubik, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#my-title {
+  color: gold;
+  font-family: rubik, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+}
+#my-about {
+  font-family: cursive;
+}
+
+#button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background-color: blue;
+}
+#button {
+  background-color: blue;
+  border-radius: 4px;
+}
+/***************************************************************************
+navbootstrap
+*************************************************************************/
+#navbarNav {
+  color: white;
+  text-align: end;
+  padding-right: 30px;
 }
