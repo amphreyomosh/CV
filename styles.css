@@ -7,7 +7,7 @@ header,
 main {
   margin: 20px;
 }
-/* CV      */
+  /*CV    */  
 .paper-background {
   background-color: white;
   max-width: 1000px;
@@ -34,6 +34,7 @@ main {
 }
 
 /* DISPLAY*/
+
 @media screen and (max-width: 799px) {
   #info .left {
     text-align: center;
@@ -80,8 +81,7 @@ main {
 }
 #grid-container {
   display: grid;
-  grid-template-column: 1fr 1fr;
-  grid-template-row: auto auto;
+ 
   gap: 20px;
 }
 #title {
@@ -207,7 +207,7 @@ textarea {
   padding: 10px 5px;
 }
 
-.required label:: after {
+.required label::after {
   content: " *";
   color: red;
 }

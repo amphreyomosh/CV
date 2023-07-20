@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-    crossorigin="anonymous"
-  />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <title>MY CV</title>
   </head>
+
   <body>
-    
     <nav class="navbar navbar-expand-lg bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">LOGO</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse bg-primary" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">CV</a>
@@ -38,19 +47,17 @@
         </div>
       </div>
     </nav>
-    
 
-
-    <div class="paper-background">
-      <header id="info">
-        <div class="left">
+    <div class="container paper-background">
+      <header id="info" class="row">
+        <div class="col-md-6">
           <h1>Humphrey Omondi</h1>
           <h2>Web Developer</h2>
         </div>
-        <div class="right">
-          <strong>Email:</strong
-          ><a href="mailto:onjuraezekiel2@gmail.com"
-            >amphreyomosh2001@gmail.com </a
+        <div class="col-md-6">
+          <strong>Email:</strong>
+          <a href="mailto:amphreyomosh2001@gmail.com"
+            >amphreyomosh2001@gmail.com</a
           ><br />
           <strong>Github:</strong>
           <a href="https://github.com/amphreyomosh"
@@ -60,12 +67,12 @@
       </header>
       <main>
         <hr />
-        <section id="Profile">
-          <div class="left">
+        <section id="Profile" class="row">
+          <div class="col-md-3">
             <h3>Profile</h3>
           </div>
-          <div class="right">
-            <p>I am a Web Developer from Nairobi,Kenya.</p>
+          <div class="col-md-9">
+            <p>I am a Web Developer from Nairobi, Kenya.</p>
             <p>
               Highly skilled and creative web developer with few years of
               experience specializing in front-end development. Proficient in
@@ -79,17 +86,17 @@
         </section>
 
         <hr />
-        <section id="Skills">
-          <div class="left">
+        <section id="Skills" class="row">
+          <div class="col-md-3">
             <h3>Skills</h3>
           </div>
-          <div class="right">
+          <div class="col-md-9">
             <ul>
               <li>
                 Front-end Development: HTML5, CSS3, JavaScript, React, Angular,
                 Bootstrap
               </li>
-              <li>leadership developements</li>
+              <li>Leadership Developments</li>
               <li>
                 User Interface (UI) Design: Wireframing, Prototyping, Responsive
                 Design
@@ -108,50 +115,51 @@
         </section>
 
         <hr />
-        <section id="experience">
-          <div class="left">
+        <section id="experience" class="row">
+          <div class="col-md-3">
             <h3>Experience</h3>
           </div>
-          <div class="right">
+          <div class="col-md-9">
             <div class="work-item">
               <div class="Work-tittle-left">
-                <h4>Job Tittle</h4>
+                <h4>Job Title</h4>
                 <h5>Company</h5>
               </div>
               <div class="Work-tittle-right">
                 <h5>Dates</h5>
               </div>
             </div>
-            <p>Job Discription</p>
+            <p>Job Description</p>
           </div>
         </section>
 
         <hr />
-        <section id="Education">
-          <div class="left">
+        <section id="Education" class="row">
+          <div class="col-md-3">
             <h3>Education</h3>
           </div>
-          <div class="right">
+          <div class="col-md-9">
             <p class="school">
-              <strong> school</strong><br />
+              <strong>School</strong><br />
               Bachelor's Degree in Information Technology.<br />
-              University of Nairobi <br />
-              Dates: 2021-2022
+              University of Nairobi<br />
+              Dates: 2023-2027
             </p>
             <p>
               Kenya Certificate of Secondary Education<br />
-              St.Hilarius Secondary School<br />
+              St. Hilarius Secondary School<br />
               Dates: 2019-2022
             </p>
             <p>
               Kenya Certificate of Primary Education<br />
-              St.Jeol primary School<br />
+              St. Jeol primary School<br />
               Dates: 2007-2017
             </p>
           </div>
         </section>
       </main>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
