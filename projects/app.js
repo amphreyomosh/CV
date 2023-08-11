@@ -1,0 +1,40 @@
+// function playAudio(key, dataKey, e) {
+//   if (e.key === key || e.key === key.toUpperCase()) {
+//     const audio = document.querySelector(`audio[data-key="${dataKey}"]`);
+//     if (audio) {
+//       audio.currentTime = 0;
+//       audio.play();
+//     }
+//   }
+// }
+
+// document.addEventListener("keydown", function (e) {
+//   playAudio("a", 65, e);
+//   playAudio("s", 83, e);
+//   playAudio("d", 68, e);
+//   playAudio("f", 70, e);
+//   playAudio("g", 71, e);
+//   playAudio("h", 72, e);
+//   playAudio("j", 74, e);
+//   playAudio("k", 75, e);
+//   playAudio("l", 76, e);
+// });
+
+function removeTransition(e) {
+  if (e.propertyName !== "transform") return;
+  e.target.classList.remove("playing");
+}
+
+function playSound(e) {
+  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+  const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+  if (!audio) return;
+
+  key.classList.add("playing");
+  audio.currentTime = 0;
+  audio.play();
+}
+
+const keys = Array.from(document.querySelectorAll(".key"));
+keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
+window.addEventListener("keydown", playSound);
